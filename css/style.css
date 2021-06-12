@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gray: #f3f3f3;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+/* Nav Styles*/
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 60%;
+    margin-left: 10px;
+}
+.logo img {
+    width: 150px;
+}
+
+.nav-items {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items ul {
+    list-style: none;
+}
+
+.nav-social a {
+    text-decoration: none;
+}
+
+.nav-social a:visited,
+.nav-social a:active {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+.nav-items ul li {
+    display: inline-block;
+}
+
+.nav-items .nav-social {
+    color: #2c2c2c;
+}
+
+.nav-social .facebook:hover {
+    color: #1196f5;
+}
+
+.nav-social .twitter:hover {
+    color: #1da1f2;
+}
+
+.nav-social .instagram:hover {
+    color: #e54a5c;
+}
+
+.nav-social .youtube:hover {
+    color: #ff0000;
+}
+
+.nav-links > ul > li > a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+.nav-links > ul > li > a:visited,
+.nav-links > ul > li > a:active {
+    text-decoration: none;
+}
+
+.nav-links > ul > li > a:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-links > ul > li > a {
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* End Nav Styles */
