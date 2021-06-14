@@ -92,4 +92,25 @@
     padding-top: 15px;
 }
 
+@media (max-width: 767px) {
+    .nav-items > .nav-social {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        
+    }
+
+    .nav-links > ul > li > a {
+        justify-content: center;
+    }
+}
+
 /* End Nav Styles */
