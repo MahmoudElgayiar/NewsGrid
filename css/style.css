@@ -1,29 +1,79 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --gray: #f3f3f3;
+body {
+    line-height: 1.5;
 }
 
+:root {
+    --gray: #f3f3f3;
+    --category-sports: #f99500;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.category {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    padding: 0.2rem 0.4rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: #bd2b2a;
+    color: #fff;
+    padding: 7px 20px;
+    margin-top: 5px;
+}
+
+.btn-primary {
+    background: #0b59dd;
+}
 /* Nav Styles*/
 
-.logo img {
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    height: 70px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    align-self: center;
     width: 150px;
 }
 
-.nav-items ul {
+.nav-items > .nav-links ul {
     list-style: none;
+    display: flex;
 }
 
-.nav-social {
-    justify-self: start;
-    align-self: baseline;
-}
-
-.nav-social a {
+a {
     text-decoration: none;
+    color: #2c2c2c;
 }
 
 .nav-social a:visited,
@@ -32,17 +82,9 @@
     color: #2c2c2c;
 }
 
-.nav-items ul li {
-    display: inline-block;
-}
-
 .nav-items .nav-social {
     color: #2c2c2c;
     padding-left: 10px;
-}
-
-.nav-items .nav-social > a {
-    margin-left: 5px;
 }
 
 .nav-social .facebook:hover {
@@ -65,7 +107,7 @@
     text-decoration: none;
     color: #333333;
     font-weight: bold;
-    padding: 20px;
+    padding: 13px;
 }
 
 .nav-links > ul > li > a:visited,
@@ -88,8 +130,33 @@
     cursor: pointer;
 }
 
-.nav-links > ul > li {
-    padding-top: 15px;
+/* End Nav Styles */
+header {
+    background: #333333;
+    color: white;
+    position: relative;
 }
 
-/* End Nav Styles */
+.showcase-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 50vh;
+}
+
+.showcase-content {
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    background: url("../images/featured.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.category-sports {
+    background: var(--category-sports);
+}
